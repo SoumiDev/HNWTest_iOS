@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FB6517525B7E457001E8A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6517425B7E457001E8A45 /* AppDelegate.swift */; };
+		8FB6517C25B7E457001E8A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6517A25B7E457001E8A45 /* Main.storyboard */; };
+		8FB6517E25B7E459001E8A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6517D25B7E459001E8A45 /* Assets.xcassets */; };
+		8FB6518125B7E459001E8A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6517F25B7E459001E8A45 /* LaunchScreen.storyboard */; };
+		8FB6518C25B7E459001E8A45 /* HoneywellPhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6518B25B7E459001E8A45 /* HoneywellPhotoViewerTests.swift */; };
+		8FB6519725B7E459001E8A45 /* HoneywellPhotoViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6519625B7E459001E8A45 /* HoneywellPhotoViewerUITests.swift */; };
+		8FB651B225B7E533001E8A45 /* NetworkMonitoringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB651B125B7E533001E8A45 /* NetworkMonitoringManager.swift */; };
+		8FB651B725B7E573001E8A45 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB651B625B7E573001E8A45 /* Rechability.swift */; };
+		8FB651BD25B7E59B001E8A45 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB651BC25B7E59B001E8A45 /* SystemConfiguration.framework */; };
+		8FB651C325B7E63A001E8A45 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB651C225B7E63A001E8A45 /* AppConstants.swift */; };
+		8FB651C925B7E6F6001E8A45 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB651C825B7E6F6001E8A45 /* WelcomeViewController.swift */; };
+		8FB651D125B7E724001E8A45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB651D025B7E724001E8A45 /* HomeViewController.swift */; };
+		8FDAEC3B25B807020041A030 /* PhotoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEC3A25B807020041A030 /* PhotoItemCell.swift */; };
+		8FDAEC3D25B812C30041A030 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEC3C25B812C30041A030 /* PhotoDetailsViewController.swift */; };
+		8FDAEC4025B818A10041A030 /* HomeViewControllerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEC3F25B818A10041A030 /* HomeViewControllerTestCase.swift */; };
+		8FDAEC4325B8197D0041A030 /* PhotoTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEC4225B8197D0041A030 /* PhotoTestData.swift */; };
+		8FE3F77025B7E98E0073BAED /* PhotoDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F76F25B7E98E0073BAED /* PhotoDownloadManager.swift */; };
+		8FE3F77325B7E9D50073BAED /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F77225B7E9D50073BAED /* PhotoData.swift */; };
+		8FE3F77625B7EB7C0073BAED /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F77525B7EB7C0073BAED /* PhotoViewModel.swift */; };
+		8FE3F77925B7EC060073BAED /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F77825B7EC060073BAED /* APIRequestManager.swift */; };
+		8FE3F77B25B7EC750073BAED /* APIServiceCallmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F77A25B7EC750073BAED /* APIServiceCallmanager.swift */; };
+		8FE3F77D25B7ECAC0073BAED /* PhotoServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F77C25B7ECAC0073BAED /* PhotoServiceHelper.swift */; };
+		8FE3F78025B7ECE50073BAED /* Websettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F77F25B7ECE50073BAED /* Websettings.swift */; };
+		8FE3F79225B7F4890073BAED /* DefaultTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F79125B7F4890073BAED /* DefaultTableHeaderView.swift */; };
+		8FE3F79625B7F4F20073BAED /* DefaultTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE3F79525B7F4F20073BAED /* DefaultTableHeaderView.xib */; };
+		8FE3F79925B7F6330073BAED /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F79825B7F6330073BAED /* LoadingOverlay.swift */; };
+		8FE3F79B25B7F6540073BAED /* CommonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3F79A25B7F6540073BAED /* CommonAlertView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FB6518825B7E459001E8A45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB6516925B7E457001E8A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB6517025B7E457001E8A45;
+			remoteInfo = HoneywellPhotoViewer;
+		};
+		8FB6519325B7E459001E8A45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB6516925B7E457001E8A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB6517025B7E457001E8A45;
+			remoteInfo = HoneywellPhotoViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FB6517125B7E457001E8A45 /* Photo Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB6517425B7E457001E8A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FB6517B25B7E457001E8A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FB6517D25B7E459001E8A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FB6518025B7E459001E8A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FB6518225B7E459001E8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB6518725B7E459001E8A45 /* HoneywellPhotoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneywellPhotoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB6518B25B7E459001E8A45 /* HoneywellPhotoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneywellPhotoViewerTests.swift; sourceTree = "<group>"; };
+		8FB6518D25B7E459001E8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB6519225B7E459001E8A45 /* HoneywellPhotoViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneywellPhotoViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB6519625B7E459001E8A45 /* HoneywellPhotoViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneywellPhotoViewerUITests.swift; sourceTree = "<group>"; };
+		8FB6519825B7E459001E8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB651B125B7E533001E8A45 /* NetworkMonitoringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitoringManager.swift; sourceTree = "<group>"; };
+		8FB651B625B7E573001E8A45 /* Rechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
+		8FB651BC25B7E59B001E8A45 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8FB651C225B7E63A001E8A45 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8FB651C825B7E6F6001E8A45 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8FB651D025B7E724001E8A45 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8FDAEC3A25B807020041A030 /* PhotoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItemCell.swift; sourceTree = "<group>"; };
+		8FDAEC3C25B812C30041A030 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		8FDAEC3F25B818A10041A030 /* HomeViewControllerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTestCase.swift; sourceTree = "<group>"; };
+		8FDAEC4225B8197D0041A030 /* PhotoTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTestData.swift; sourceTree = "<group>"; };
+		8FE3F76F25B7E98E0073BAED /* PhotoDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloadManager.swift; sourceTree = "<group>"; };
+		8FE3F77225B7E9D50073BAED /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		8FE3F77525B7EB7C0073BAED /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		8FE3F77825B7EC060073BAED /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		8FE3F77A25B7EC750073BAED /* APIServiceCallmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceCallmanager.swift; sourceTree = "<group>"; };
+		8FE3F77C25B7ECAC0073BAED /* PhotoServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoServiceHelper.swift; sourceTree = "<group>"; };
+		8FE3F77F25B7ECE50073BAED /* Websettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Websettings.swift; sourceTree = "<group>"; };
+		8FE3F79125B7F4890073BAED /* DefaultTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTableHeaderView.swift; sourceTree = "<group>"; };
+		8FE3F79525B7F4F20073BAED /* DefaultTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultTableHeaderView.xib; sourceTree = "<group>"; };
+		8FE3F79825B7F6330073BAED /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		8FE3F79A25B7F6540073BAED /* CommonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlertView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FB6516E25B7E457001E8A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB651BD25B7E59B001E8A45 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB6518425B7E459001E8A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB6518F25B7E459001E8A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FB6516825B7E457001E8A45 = {
+			isa = PBXGroup;
+			children = (
+				8FB6517325B7E457001E8A45 /* HoneywellPhotoViewer */,
+				8FB6518A25B7E459001E8A45 /* HoneywellPhotoViewerTests */,
+				8FB6519525B7E459001E8A45 /* HoneywellPhotoViewerUITests */,
+				8FB6517225B7E457001E8A45 /* Products */,
+				8FB651BB25B7E59B001E8A45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB6517225B7E457001E8A45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FB6517125B7E457001E8A45 /* Photo Viewer.app */,
+				8FB6518725B7E459001E8A45 /* HoneywellPhotoViewerTests.xctest */,
+				8FB6519225B7E459001E8A45 /* HoneywellPhotoViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FB6517325B7E457001E8A45 /* HoneywellPhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				8FDAEC3925B806EF0041A030 /* Cell */,
+				8FE3F79725B7F61B0073BAED /* Utility */,
+				8FE3F79325B7F4C40073BAED /* UI */,
+				8FE3F77E25B7ECCC0073BAED /* Configuration */,
+				8FE3F77725B7EBDF0073BAED /* APIManager */,
+				8FE3F77425B7EB5D0073BAED /* ViewModel */,
+				8FE3F77125B7E9BD0073BAED /* DataModel */,
+				8FE3F76E25B7E96B0073BAED /* DowloadManager */,
+				8FB651C725B7E6DA001E8A45 /* ViewController */,
+				8FB651C125B7E621001E8A45 /* Constants */,
+				8FB651B025B7E518001E8A45 /* NetworkManager */,
+				8FB6517425B7E457001E8A45 /* AppDelegate.swift */,
+				8FB6517A25B7E457001E8A45 /* Main.storyboard */,
+				8FB6517D25B7E459001E8A45 /* Assets.xcassets */,
+				8FB6517F25B7E459001E8A45 /* LaunchScreen.storyboard */,
+				8FB6518225B7E459001E8A45 /* Info.plist */,
+			);
+			path = HoneywellPhotoViewer;
+			sourceTree = "<group>";
+		};
+		8FB6518A25B7E459001E8A45 /* HoneywellPhotoViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FDAEC4125B819660041A030 /* PhotoData */,
+				8FDAEC3E25B8187A0041A030 /* ViewController */,
+				8FB6518B25B7E459001E8A45 /* HoneywellPhotoViewerTests.swift */,
+				8FB6518D25B7E459001E8A45 /* Info.plist */,
+			);
+			path = HoneywellPhotoViewerTests;
+			sourceTree = "<group>";
+		};
+		8FB6519525B7E459001E8A45 /* HoneywellPhotoViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FB6519625B7E459001E8A45 /* HoneywellPhotoViewerUITests.swift */,
+				8FB6519825B7E459001E8A45 /* Info.plist */,
+			);
+			path = HoneywellPhotoViewerUITests;
+			sourceTree = "<group>";
+		};
+		8FB651B025B7E518001E8A45 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8FB651B125B7E533001E8A45 /* NetworkMonitoringManager.swift */,
+				8FB651B625B7E573001E8A45 /* Rechability.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		8FB651BB25B7E59B001E8A45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FB651BC25B7E59B001E8A45 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FB651C125B7E621001E8A45 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8FB651C225B7E63A001E8A45 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8FB651C725B7E6DA001E8A45 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F79125B7F4890073BAED /* DefaultTableHeaderView.swift */,
+				8FB651D025B7E724001E8A45 /* HomeViewController.swift */,
+				8FB651C825B7E6F6001E8A45 /* WelcomeViewController.swift */,
+				8FDAEC3C25B812C30041A030 /* PhotoDetailsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8FDAEC3925B806EF0041A030 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8FDAEC3A25B807020041A030 /* PhotoItemCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8FDAEC3E25B8187A0041A030 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8FDAEC3F25B818A10041A030 /* HomeViewControllerTestCase.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8FDAEC4125B819660041A030 /* PhotoData */ = {
+			isa = PBXGroup;
+			children = (
+				8FDAEC4225B8197D0041A030 /* PhotoTestData.swift */,
+			);
+			path = PhotoData;
+			sourceTree = "<group>";
+		};
+		8FE3F76E25B7E96B0073BAED /* DowloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F76F25B7E98E0073BAED /* PhotoDownloadManager.swift */,
+			);
+			path = DowloadManager;
+			sourceTree = "<group>";
+		};
+		8FE3F77125B7E9BD0073BAED /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F77225B7E9D50073BAED /* PhotoData.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		8FE3F77425B7EB5D0073BAED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F77525B7EB7C0073BAED /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8FE3F77725B7EBDF0073BAED /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F77825B7EC060073BAED /* APIRequestManager.swift */,
+				8FE3F77A25B7EC750073BAED /* APIServiceCallmanager.swift */,
+				8FE3F77C25B7ECAC0073BAED /* PhotoServiceHelper.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		8FE3F77E25B7ECCC0073BAED /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F77F25B7ECE50073BAED /* Websettings.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		8FE3F79325B7F4C40073BAED /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F79425B7F4CA0073BAED /* Header */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8FE3F79425B7F4CA0073BAED /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F79525B7F4F20073BAED /* DefaultTableHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8FE3F79725B7F61B0073BAED /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3F79825B7F6330073BAED /* LoadingOverlay.swift */,
+				8FE3F79A25B7F6540073BAED /* CommonAlertView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FB6517025B7E457001E8A45 /* HoneywellPhotoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB6519B25B7E459001E8A45 /* Build configuration list for PBXNativeTarget "HoneywellPhotoViewer" */;
+			buildPhases = (
+				8FB6516D25B7E457001E8A45 /* Sources */,
+				8FB6516E25B7E457001E8A45 /* Frameworks */,
+				8FB6516F25B7E457001E8A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoneywellPhotoViewer;
+			productName = HoneywellPhotoViewer;
+			productReference = 8FB6517125B7E457001E8A45 /* Photo Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FB6518625B7E459001E8A45 /* HoneywellPhotoViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB6519E25B7E459001E8A45 /* Build configuration list for PBXNativeTarget "HoneywellPhotoViewerTests" */;
+			buildPhases = (
+				8FB6518325B7E459001E8A45 /* Sources */,
+				8FB6518425B7E459001E8A45 /* Frameworks */,
+				8FB6518525B7E459001E8A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB6518925B7E459001E8A45 /* PBXTargetDependency */,
+			);
+			name = HoneywellPhotoViewerTests;
+			productName = HoneywellPhotoViewerTests;
+			productReference = 8FB6518725B7E459001E8A45 /* HoneywellPhotoViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FB6519125B7E459001E8A45 /* HoneywellPhotoViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB651A125B7E459001E8A45 /* Build configuration list for PBXNativeTarget "HoneywellPhotoViewerUITests" */;
+			buildPhases = (
+				8FB6518E25B7E459001E8A45 /* Sources */,
+				8FB6518F25B7E459001E8A45 /* Frameworks */,
+				8FB6519025B7E459001E8A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB6519425B7E459001E8A45 /* PBXTargetDependency */,
+			);
+			name = HoneywellPhotoViewerUITests;
+			productName = HoneywellPhotoViewerUITests;
+			productReference = 8FB6519225B7E459001E8A45 /* HoneywellPhotoViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FB6516925B7E457001E8A45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					8FB6517025B7E457001E8A45 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					8FB6518625B7E459001E8A45 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8FB6517025B7E457001E8A45;
+					};
+					8FB6519125B7E459001E8A45 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8FB6517025B7E457001E8A45;
+					};
+				};
+			};
+			buildConfigurationList = 8FB6516C25B7E457001E8A45 /* Build configuration list for PBXProject "HoneywellPhotoViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FB6516825B7E457001E8A45;
+			productRefGroup = 8FB6517225B7E457001E8A45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FB6517025B7E457001E8A45 /* HoneywellPhotoViewer */,
+				8FB6518625B7E459001E8A45 /* HoneywellPhotoViewerTests */,
+				8FB6519125B7E459001E8A45 /* HoneywellPhotoViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FB6516F25B7E457001E8A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE3F79625B7F4F20073BAED /* DefaultTableHeaderView.xib in Resources */,
+				8FB6518125B7E459001E8A45 /* LaunchScreen.storyboard in Resources */,
+				8FB6517E25B7E459001E8A45 /* Assets.xcassets in Resources */,
+				8FB6517C25B7E457001E8A45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB6518525B7E459001E8A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB6519025B7E459001E8A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FB6516D25B7E457001E8A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE3F78025B7ECE50073BAED /* Websettings.swift in Sources */,
+				8FB651B725B7E573001E8A45 /* Rechability.swift in Sources */,
+				8FDAEC3B25B807020041A030 /* PhotoItemCell.swift in Sources */,
+				8FE3F79925B7F6330073BAED /* LoadingOverlay.swift in Sources */,
+				8FB6517525B7E457001E8A45 /* AppDelegate.swift in Sources */,
+				8FE3F77D25B7ECAC0073BAED /* PhotoServiceHelper.swift in Sources */,
+				8FE3F77925B7EC060073BAED /* APIRequestManager.swift in Sources */,
+				8FB651C925B7E6F6001E8A45 /* WelcomeViewController.swift in Sources */,
+				8FE3F77B25B7EC750073BAED /* APIServiceCallmanager.swift in Sources */,
+				8FE3F79B25B7F6540073BAED /* CommonAlertView.swift in Sources */,
+				8FB651B225B7E533001E8A45 /* NetworkMonitoringManager.swift in Sources */,
+				8FE3F77025B7E98E0073BAED /* PhotoDownloadManager.swift in Sources */,
+				8FE3F79225B7F4890073BAED /* DefaultTableHeaderView.swift in Sources */,
+				8FB651C325B7E63A001E8A45 /* AppConstants.swift in Sources */,
+				8FDAEC3D25B812C30041A030 /* PhotoDetailsViewController.swift in Sources */,
+				8FE3F77325B7E9D50073BAED /* PhotoData.swift in Sources */,
+				8FE3F77625B7EB7C0073BAED /* PhotoViewModel.swift in Sources */,
+				8FB651D125B7E724001E8A45 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB6518325B7E459001E8A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDAEC4325B8197D0041A030 /* PhotoTestData.swift in Sources */,
+				8FDAEC4025B818A10041A030 /* HomeViewControllerTestCase.swift in Sources */,
+				8FB6518C25B7E459001E8A45 /* HoneywellPhotoViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB6518E25B7E459001E8A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB6519725B7E459001E8A45 /* HoneywellPhotoViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FB6518925B7E459001E8A45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB6517025B7E457001E8A45 /* HoneywellPhotoViewer */;
+			targetProxy = 8FB6518825B7E459001E8A45 /* PBXContainerItemProxy */;
+		};
+		8FB6519425B7E459001E8A45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB6517025B7E457001E8A45 /* HoneywellPhotoViewer */;
+			targetProxy = 8FB6519325B7E459001E8A45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FB6517A25B7E457001E8A45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB6517B25B7E457001E8A45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FB6517F25B7E459001E8A45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB6518025B7E459001E8A45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FB6519925B7E459001E8A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FB6519A25B7E459001E8A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FB6519C25B7E459001E8A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewer;
+				PRODUCT_NAME = "Photo Viewer";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FB6519D25B7E459001E8A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewer;
+				PRODUCT_NAME = "Photo Viewer";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FB6519F25B7E459001E8A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoneywellPhotoViewer.app/HoneywellPhotoViewer";
+			};
+			name = Debug;
+		};
+		8FB651A025B7E459001E8A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoneywellPhotoViewer.app/HoneywellPhotoViewer";
+			};
+			name = Release;
+		};
+		8FB651A225B7E459001E8A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoneywellPhotoViewer;
+			};
+			name = Debug;
+		};
+		8FB651A325B7E459001E8A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoneywellPhotoViewer;
+			};
+			name = Release;
+		};
+		8FE3F78125B7ED390073BAED /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Testing;
+		};
+		8FE3F78225B7ED390073BAED /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewer;
+				PRODUCT_NAME = "Photo Viewer";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Testing;
+		};
+		8FE3F78325B7ED390073BAED /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoneywellPhotoViewer.app/HoneywellPhotoViewer";
+			};
+			name = Testing;
+		};
+		8FE3F78425B7ED390073BAED /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZRH82L7M;
+				INFOPLIST_FILE = HoneywellPhotoViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Soumitra.HoneywellPhotoViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoneywellPhotoViewer;
+			};
+			name = Testing;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FB6516C25B7E457001E8A45 /* Build configuration list for PBXProject "HoneywellPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB6519925B7E459001E8A45 /* Debug */,
+				8FE3F78125B7ED390073BAED /* Testing */,
+				8FB6519A25B7E459001E8A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB6519B25B7E459001E8A45 /* Build configuration list for PBXNativeTarget "HoneywellPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB6519C25B7E459001E8A45 /* Debug */,
+				8FE3F78225B7ED390073BAED /* Testing */,
+				8FB6519D25B7E459001E8A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB6519E25B7E459001E8A45 /* Build configuration list for PBXNativeTarget "HoneywellPhotoViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB6519F25B7E459001E8A45 /* Debug */,
+				8FE3F78325B7ED390073BAED /* Testing */,
+				8FB651A025B7E459001E8A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB651A125B7E459001E8A45 /* Build configuration list for PBXNativeTarget "HoneywellPhotoViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB651A225B7E459001E8A45 /* Debug */,
+				8FE3F78425B7ED390073BAED /* Testing */,
+				8FB651A325B7E459001E8A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FB6516925B7E457001E8A45 /* Project object */;
+}
